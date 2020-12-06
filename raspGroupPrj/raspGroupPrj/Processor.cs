@@ -26,7 +26,7 @@ namespace raspGroupPrj
         List<Processor> another= new List<Processor>();
         public Processor(ref int i,int count,Random rnd)
         {
-            id = ++i;
+            id = i++;
             if(i<count)
                 if (rnd.Next(2) == 0)
                 {

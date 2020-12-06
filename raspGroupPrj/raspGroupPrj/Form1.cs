@@ -27,11 +27,12 @@ namespace raspGroupPrj
         {
             Random rnd = new Random();
             List<Processor> processors = new List<Processor>();
-            for (int i = 0; i < startProcessorsCount; i++)
+            int i = 0;
+            do
             {
                 Thread.Sleep(25);
                 processors.Add(new Processor(ref i, startProcessorsCount, rnd));
-            }
+            } while (i < startProcessorsCount);
         }
 
         private List<Task> RandomTasks(int count)
