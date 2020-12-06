@@ -1,0 +1,9 @@
+C:\Users\BrainError\source\repos\RaspSys\raspGroupPrj\raspGroupPrj\bin\Debug\raspGroupPrj.exe.config
+C:\Users\BrainError\source\repos\RaspSys\raspGroupPrj\raspGroupPrj\bin\Debug\raspGroupPrj.exe
+C:\Users\BrainError\source\repos\RaspSys\raspGroupPrj\raspGroupPrj\bin\Debug\raspGroupPrj.pdb
+C:\Users\BrainError\source\repos\RaspSys\raspGroupPrj\raspGroupPrj\obj\Debug\raspGroupPrj.csprojAssemblyReference.cache
+C:\Users\BrainError\source\repos\RaspSys\raspGroupPrj\raspGroupPrj\obj\Debug\raspGroupPrj.Properties.Resources.resources
+C:\Users\BrainError\source\repos\RaspSys\raspGroupPrj\raspGroupPrj\obj\Debug\raspGroupPrj.csproj.GenerateResource.cache
+C:\Users\BrainError\source\repos\RaspSys\raspGroupPrj\raspGroupPrj\obj\Debug\raspGroupPrj.csproj.CoreCompileInputs.cache
+C:\Users\BrainError\source\repos\RaspSys\raspGroupPrj\raspGroupPrj\obj\Debug\raspGroupPrj.exe
+C:\Users\BrainError\source\repos\RaspSys\raspGroupPrj\raspGroupPrj\obj\Debug\raspGroupPrj.pdb

@@ -10,9 +10,11 @@ namespace raspGroupPrj
     {
         List<Task> tasks = new List<Task>();
         Processor[] processors;
-        public Balancer(Processor[] Processors)
+        int procCount;
+        public Balancer(Processor[] Processors,int allProcCount)
         {
             processors = Processors;
+            procCount = allProcCount;
         }
         public void AddTask(Task task)
         {
@@ -21,6 +23,10 @@ namespace raspGroupPrj
         public void AddTasks(List<Task> tasks)
         {
             this.tasks.AddRange(tasks);
+        }
+        public void Balance()
+        {
+
         }
     }
 }

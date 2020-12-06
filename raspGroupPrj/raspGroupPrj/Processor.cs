@@ -10,18 +10,20 @@ namespace raspGroupPrj
     class Processor
     {
         int id;
+        private float Load;
         float load { 
-            get { return load; } 
+            get { return Load; } 
             set {
                 if (value < 0)
-                    load = 0;
+                    Load = 0;
                 else
                     if (value > 100)
-                    load = 100;
+                    Load = 100;
                     else
-                        load = value;
+                    Load = value;
             }
         }
+        int anotherCount;
         List<Task> tasks = new List<Task>();
         List<Processor> another= new List<Processor>();
         public Processor(ref int i,int count,Random rnd)
@@ -33,6 +35,7 @@ namespace raspGroupPrj
                     Thread.Sleep(25);
                     another.Add(new Processor(ref i, count, rnd));
                 }
+            anotherCount = i - id-1;
         }
         public void AddTask(Task task)
         {
@@ -42,5 +45,6 @@ namespace raspGroupPrj
         {
             this.tasks.AddRange(tasks);
         }
+
     }
 }

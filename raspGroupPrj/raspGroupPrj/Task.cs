@@ -8,7 +8,8 @@ namespace raspGroupPrj
 {
     class Task
     {
-        float complexity;
+        public float complexity;
+        float progress;
         public Task(int Complexity)
         {
             complexity = Complexity;

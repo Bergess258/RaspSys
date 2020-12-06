@@ -18,12 +18,12 @@ namespace raspGroupPrj
         public Form1()
         {
             InitializeComponent();
-            Balancer balancer = new Balancer();
+            Balancer balancer = new Balancer(RandomProcessors(), startProcessorsCount);
             balancer.AddTasks(RandomTasks(startTasksCount));
-            RandomProcessors();
+            balancer
         }
 
-        private void RandomProcessors()
+        private Processor[] RandomProcessors()
         {
             Random rnd = new Random();
             List<Processor> processors = new List<Processor>();
@@ -33,6 +33,7 @@ namespace raspGroupPrj
                 Thread.Sleep(25);
                 processors.Add(new Processor(ref i, startProcessorsCount, rnd));
             } while (i < startProcessorsCount);
+            return processors.ToArray();
         }
 
         private List<Task> RandomTasks(int count)
