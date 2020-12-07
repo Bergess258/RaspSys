@@ -8,7 +8,6 @@ namespace raspGroupPrj
 {
     class Balancer
     {
-        List<Task> tasks = new List<Task>();
         Processor[] processors;
         int procCount;
         public Balancer(Processor[] Processors,int allProcCount)
@@ -16,16 +15,9 @@ namespace raspGroupPrj
             processors = Processors;
             procCount = allProcCount;
         }
-        public void AddTask(Task task)
-        {
-            tasks.Add(task);
-        }
-        public void AddTasks(List<Task> tasks)
-        {
-            this.tasks.AddRange(tasks);
-        }
         public void Balance()
         {
+            int overallComp = (int)tasks.Sum(x => x.complexity);
 
         }
     }

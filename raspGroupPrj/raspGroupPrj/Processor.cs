@@ -24,7 +24,6 @@ namespace raspGroupPrj
             }
         }
         int anotherCount;
-        List<Task> tasks = new List<Task>();
         List<Processor> another= new List<Processor>();
         public Processor(ref int i,int count,Random rnd)
         {
@@ -37,14 +36,5 @@ namespace raspGroupPrj
                 }
             anotherCount = i - id-1;
         }
-        public void AddTask(Task task)
-        {
-            tasks.Add(task);
-        }
-        public void AddTasks(List<Task> tasks)
-        {
-            this.tasks.AddRange(tasks);
-        }
-
     }
 }
