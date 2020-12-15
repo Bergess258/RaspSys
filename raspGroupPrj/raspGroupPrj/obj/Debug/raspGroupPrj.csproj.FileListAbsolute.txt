@@ -7,3 +7,4 @@ C:\Users\BrainError\source\repos\RaspSys\raspGroupPrj\raspGroupPrj\obj\Debug\ras
 C:\Users\BrainError\source\repos\RaspSys\raspGroupPrj\raspGroupPrj\obj\Debug\raspGroupPrj.csproj.CoreCompileInputs.cache
 C:\Users\BrainError\source\repos\RaspSys\raspGroupPrj\raspGroupPrj\obj\Debug\raspGroupPrj.exe
 C:\Users\BrainError\source\repos\RaspSys\raspGroupPrj\raspGroupPrj\obj\Debug\raspGroupPrj.pdb
+C:\Users\BrainError\source\repos\RaspSys\raspGroupPrj\raspGroupPrj\obj\Debug\raspGroupPrj.Form1.resources

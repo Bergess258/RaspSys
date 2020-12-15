@@ -8,17 +8,33 @@ namespace raspGroupPrj
 {
     class Balancer
     {
-        Processor[] processors;
-        int procCount;
-        public Balancer(Processor[] Processors,int allProcCount)
-        {
-            processors = Processors;
-            procCount = allProcCount;
-        }
-        public void Balance()
-        {
-            int overallComp = (int)tasks.Sum(x => x.complexity);
+        public static int maxLoad = 80;
+        public float complexity = 20;
+        public Processor mainProcessor;
 
+        public Balancer(Processor[] Processors)
+        {
+            mainProcessor = new Processor(Processors);
+            //BalanceEchoTest();
         }
+        public async void BalanceEcho(int addComp)
+        {
+            complexity += addComp;
+            complexity = await mainProcessor.Balance(complexity);
+            if (complexity < 0)
+                complexity = 0;
+        }
+        public async void BalanceEcho()
+        {
+            complexity = await mainProcessor.Balance(complexity);
+            if (complexity < 0)
+                complexity = 0;
+        }
+
+        public void BalanceEchoTest()
+        {
+            complexity = mainProcessor.BalanceNoAsunc(complexity);
+        }
+
     }
 }
